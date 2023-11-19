@@ -1,4 +1,4 @@
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../pages/Dashboard/Dashboard";
 
 const coreRoutes = [
     {
@@ -8,4 +8,4 @@ const coreRoutes = [
     }
 ]
 
-export default coreRoutes;
+export default coreRoutes;  

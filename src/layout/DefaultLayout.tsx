@@ -1,14 +1,19 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
+import Header from './Header/Header';
+import Sidebar from './Sidebar/Sidebar';
 
 const DefaultLayout = () => {
     return (
         <>
-            <Header />
             <div>
-                <Outlet />
-            </div>  
+                <Sidebar />
+                <div>
+                    <Header />
+                    <main>
+                        <Outlet />
+                    </main>
+                </div>                
+            </div>
         </>
     )
 }
